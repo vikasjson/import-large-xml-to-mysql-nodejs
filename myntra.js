@@ -8,6 +8,8 @@ const XmlStream = require('xml-stream');
 
 function uploadData() {
     const filePath = './myntra.xml';    // This file is the size of 1.5 GB and having the records arround 12 Lakh
+                                        // I tried but due to github max upload size could not upload the same
+                                        // file to repo if you are this you can take your own large file
 
     const readStream = fs.createReadStream(filePath);
     const xml = new XmlStream(readStream);
