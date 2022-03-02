@@ -32,7 +32,7 @@ function uploadData() {
             item.origin_country, item.picture, item.price, item.url, item.vendor,item.param]);
 
         if (cnt === 4000) {
-            console.log('10000 records inserted');
+            console.log('4000 records inserted');
             insertData(data_set);
             data_set = [];
             cnt = 1;
